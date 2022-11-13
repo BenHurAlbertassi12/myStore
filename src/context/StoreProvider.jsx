@@ -1,10 +1,10 @@
-import { render } from "@testing-library/react";
+// import { render } from "@testing-library/react";
 import React, { useEffect, useState } from "react";
 
 
 function StoreProvider () {
-    const [data, setData] = useState([]); // linha 23
-    const [filteredData, setFilterData] = useState([])
+    // const [data, setData] = useState([]); // linha 23
+    // const [filteredData, setFilterData] = useState([])
     
     useEffect(() => {
         const fetchPlanet = async () => {
