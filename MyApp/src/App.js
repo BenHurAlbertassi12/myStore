@@ -3,9 +3,8 @@ import StoreProvider from "./context/StoreProvider";
 function App() {
   return (
     <div>
-
-        <StoreProvider />
-
+      <h1>hello worlds</h1>
+      <StoreProvider />
     </div>
   );
 }
