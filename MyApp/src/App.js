@@ -1,13 +1,15 @@
-import ItemCategories from "./components/ItemCategories"
-
+import React from "react";
+// import { Route } from 'react-router-dom';
+import StoreProvider from "./context/StoreProvider";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
-      <h1>hello worlds</h1>
-      <ItemCategories />
+      <StoreProvider>
+        <Home />
+      </StoreProvider>
     </div>
   );
 }
-
 export default App;

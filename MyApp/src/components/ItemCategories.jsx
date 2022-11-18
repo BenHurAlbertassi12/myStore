@@ -1,23 +1,25 @@
-import { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
+import StoreContext from '../context/StoreContext';
 
-function ApiCategories() {
-  const [data, setData] = useState([]);
+function ItemCategories() {
+  const { categories } = useContext(StoreContext);
 
-  const arrayCategory = data.filter((index) => index);
-
-  return (
-    <div>
-      <section>
-        {arrayCategory.map((category) => (
-          <ul>
-            <div>
-              <input type='checkbox' />
-              <li key={category.id}>{category.name}</li>
-            </div>
-          </ul>
-        ))}
-      </section>
-    </div>
-  );
+  function listCategories() {
+    return categories.map((item, index) => {
+      return (
+        <div key={index}>
+          <input
+            type='radio'
+            id={item.name}
+            value={item.name}
+            name='Categories'
+          />
+          <label htmlFor={item.name}>{item.name}</label>
+        </div>
+      );
+    });
+  }
+  return <div>{listCategories()}</div>;
 }
-export default ApiCategories;
+
+export default ItemCategories;
