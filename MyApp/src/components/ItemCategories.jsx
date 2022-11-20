@@ -1,35 +1,25 @@
-import { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
+import StoreContext from '../context/StoreContext';
 
-function ApiCategories() {
-  const [data, setData] = useState([]);
+function ItemCategories() {
+  const { categories } = useContext(StoreContext);
 
-  useEffect(() => {
-    const ApiCategories = async () => {
-      const response = await fetch(
-        'https://api.mercadolibre.com/sites/MLB/categories'
+  function listCategories() {
+    return categories.map((item, index) => {
+      return (
+        <div key={index}>
+          <input
+            type='radio'
+            id={item.name}
+            value={item.name}
+            name='Categories'
+          />
+          <label htmlFor={item.name}>{item.name}</label>
+        </div>
       );
-      const results = await response.json();
-      setData(results);
-      console.log(results);
-    };
-    ApiCategories();
-  }, [setData]);
-
-  const arrayCategory = data.filter((index) => index);
-
-  return (
-    <div>
-      <section>
-        {arrayCategory.map((category) => (
-          <ul>
-            <div>
-              <input type='checkbox' />
-              <li key={category.id}>{category.name}</li>
-            </div>
-          </ul>
-        ))}
-      </section>
-    </div>
-  );
+    });
+  }
+  return <div>{listCategories()}</div>;
 }
-export default ApiCategories;
+
+export default ItemCategories;
