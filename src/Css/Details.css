@@ -1,0 +1,50 @@
+.container-details {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(224, 217, 217);
+    text-align: center;
+    padding: 50px;
+}
+
+.details img {
+    width: 150px;
+    height: 150px;
+}
+
+.details h2 {
+    font-size: 18px;
+    color: #333;
+    padding: 30px;
+}
+
+.details h4 {
+    font-size: 24px;
+    color: #333;
+    padding: 20px;
+}
+
+.details p {
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
+}
+
+.details button {
+    background-color: rgb(117, 175, 230);
+    padding: 15px;
+    border: 1px solid rgb(117, 175, 230);;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}

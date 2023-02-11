@@ -1,0 +1,35 @@
+.container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 25px;
+    background-color: #fff159;
+    background-image: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.3/mercadolibre/logo__small@2x.png);
+    background-repeat: no-repeat;
+    background-position: 40px;
+    background-size: 80px;
+}
+
+.container-header input {
+    width: 50%;
+    font-family: inherit;
+    padding: 6px 6px 6px 35px;
+}
+
+.container-header > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;       
+}
+
+.header svg {    
+    margin: 1px;   
+    font-size: 18px; 
+}
+
+
+
+
+
