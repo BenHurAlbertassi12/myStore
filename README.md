@@ -1,16 +1,24 @@
+# myStore
+Este repositório contém o código fonte de uma aplicação fictícia de uma loja online, chamada myStore.
+foi utilizada a API do Mercado Livre
+_________________________________________________________________________________________________________
 
-# Project Mercado Livre
-__________________________________
+## Tecnologias utilizadas
+* HTML
+* CSS
+* JavaScript
 
-Esse site foi feito em React JS, ele foi desenvolvido durante o curso da Trybe, nesse site é possível fazer uma simulação de compras usando a API do Mercado Livre.
+## Recursos
+* Interface amigável e intuitiva
+* Catálogo de produtos atualizável
+* Carrinho de compras
+* Sistema de pagamento integrado
 
-Nesse site foi usado as seguintes APIs:
-- https://api.mercadolibre.com/sites/MLB/search?q=${item}
-- https://api.mercadolibre.com/sites/MLB/categories
-- https://api.mercadolibre.com/sites/MLB/search?category=$${idCategory}&q=${item}
+## Instalação
+Para rodar o projeto em sua máquina local, você precisará clonar o repositório em sua máquina.
+ > No terminal 
+   * npm install
+   * npm start 
 
-Instalação:
-
-Para instalação, clone o repositório e faça o npm install para as dependências. <br>
-
-Para rodar o projeto, digite no terminal npm start.
+## Contribuição
+Contribuições são sempre bem-vindas! Se você tiver alguma ideia para melhorar a aplicação, basta abrir uma pull request.
